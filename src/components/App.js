@@ -1,2 +1,6 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
-
+<div id="root"></div>
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+);
+const element = <h1>Hello, world</h1>;
+root.render(element);
